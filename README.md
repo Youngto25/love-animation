@@ -3,5 +3,7 @@
 
 ## 效果图
 !(home)[https://github.com/Youngto25/love-animation/blob/master/images/home_page.jpg]
+
 !(picture)[https://github.com/Youngto25/love-animation/blob/master/images/picture_page.jpg]
+
 !(download)[https://github.com/Youngto25/love-animation/blob/master/images/download.jpg]
