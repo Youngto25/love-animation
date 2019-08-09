@@ -1,0 +1,121 @@
+.pic-wrapper{
+  width: 96vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.pic-wrapper.active{
+  height: 100vh;
+  overflow: hidden;
+}
+
+.pic-wrapper .item{
+  position: relative;
+  box-sizing: border-box;
+  border-top-left-radius: 16rpx;
+  border-top-right-radius: 16rpx;
+}
+
+.pic-wrapper .item .download{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FD3C00;
+  margin-top: -8rpx;
+  margin-bottom: 8rpx;
+  height: 75rpx;
+  border-bottom-left-radius: 16rpx;
+  border-bottom-right-radius: 16rpx;
+  box-shadow: 0 4rpx 4rpx #cccccc;
+  opacity: 0.8;
+  font-size: 28rpx;
+  color: #ffffff;
+}
+
+.download.active{
+  background: #e84393;
+  box-shadow: 0 4rpx 4rpx #aaaaaa;
+}
+
+.pic-wrapper image{
+  width: 100%;
+  border-top-left-radius: 16rpx;
+  border-top-right-radius: 16rpx;
+  position: relative;
+  z-index: 9;
+}
+
+.wrapper{
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.8);
+}
+
+.pop-up{
+  width: 80%;
+  background: #f7f1e3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20%;
+}
+
+.pop-up image{
+  width: 88%;
+}
+
+.message{
+  color: #000000;
+  font-weight: 600;
+  font-size: 30rpx;
+}
+
+.button-wrapper{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 30rpx 0 40rpx 0;
+}
+
+.button-download{
+  width: 40%;
+  height: 75rpx;
+  background: #fff200;
+  text-align: center;
+  color: #000000;
+  border-radius: 40rpx;
+  line-height: 70rpx;
+  box-shadow: 4rpx 4rpx 4rpx #cccccc;
+}
+
+.button-download.active{
+  transform: scale(1.2);
+  box-shadow: 4rpx 4rpx 8rpx black;
+}
+
+.button-cancel{
+  width: 40%;
+  height: 75rpx;
+  background: #000000;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 40rpx;
+  line-height: 70rpx;
+  box-shadow: 4rpx 4rpx 4rpx #cccccc;
+}
+
+.button-cancel.active{
+  transform: scale(1.05);
+  box-shadow: 4rpx 4rpx 8rpx black;
+}

@@ -1,0 +1,38 @@
+page{
+  background: #46215F;
+}
+
+.content-wrapper{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.introduce{
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.introduce view:first-child{
+  width: 90%;
+  font-size: 70rpx;
+  font-weight: 600;
+  margin-bottom: 80rpx;
+  text-align: center;
+}
+
+.introduce view:last-child{
+  font-size: 40rpx;
+  font-weight: 400;
+  text-align: center;
+}
+
+image{
+  margin: 20rpx;
+  border-radius: 10%;
+}

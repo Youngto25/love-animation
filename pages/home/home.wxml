@@ -1,0 +1,7 @@
+<view class="content-wrapper">
+  <image src="../../images/th.jpg" mode="aspectFill"></image>
+  <view class="introduce">
+    <view>A applet for viewing pictures</view>
+    <view>If you like one picture, you can also download it</view>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+<view class="mark">
+  <view class="pic-wrapper">
+    <view class="item" wx:for="{{y}}" wx:key="{{index}}">
+      <image src="{{item}}" mode="scaleToFill"></image>
+      <view class="download" data-src="{{item}}" bindtap="download">
+        download
+      </view>
+    </view>
+  </view>
+
+  <view class="wrapper" wx:if="{{show}}">
+    <view class="pop-up">
+      <image src="{{zhanshi}}" mode="aspectFit"></image>
+      <view class="message">Do you want download the one</view>
+      <view class="button-wrapper">
+        <view class="button-download {{changeDownload?'active':''}}" bindtap="downloadImage">Download</view>
+        <view class="button-cancel {{changeCancel?'active':''}}" bindtap="downloadCancel">Cancel</view>
+      </view>
+    </view>
+  </view>
+</view>
+
