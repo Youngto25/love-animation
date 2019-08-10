@@ -1,31 +1,31 @@
 {
   "pages": [
-    "pages/home/home",
-    "pages/picture/picture"
+    "pages/picture/picture",
+    "pages/home/home"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarBackgroundColor": "#46215F",
     "navigationBarTitleText": "Love Animation",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
-    "color": "black",
-    "selectedColor": "#46215F",
-    "backgroundColor": "#ffffff",
+    "color": "#ffffff",
+    "selectedColor": "#FD3C00",
+    "backgroundColor": "#46215F",
     "borderStyle": "black",
     "list": [
-      {
-        "pagePath": "pages/home/home",
-        "text": "Home",
-        "iconPath": "images/home.png",
-        "selectedIconPath": "images/home-active.png"
-      },
       {
         "pagePath": "pages/picture/picture",
         "text": "Picture",
         "iconPath": "images/me.png",
         "selectedIconPath": "images/me-active.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "Introduce",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-active.png"
       }
     ]
   },

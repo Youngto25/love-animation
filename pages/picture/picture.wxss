@@ -6,16 +6,15 @@
   box-sizing: border-box;
 }
 
-.pic-wrapper.active{
-  height: 100vh;
-  overflow: hidden;
-}
-
 .pic-wrapper .item{
   position: relative;
   box-sizing: border-box;
   border-top-left-radius: 16rpx;
   border-top-right-radius: 16rpx;
+}
+
+.pic-wrapper .item:first-child{
+  margin-top: 8rpx;
 }
 
 .pic-wrapper .item .download{
@@ -33,11 +32,6 @@
   opacity: 0.8;
   font-size: 28rpx;
   color: #ffffff;
-}
-
-.download.active{
-  background: #e84393;
-  box-shadow: 0 4rpx 4rpx #aaaaaa;
 }
 
 .pic-wrapper image{
@@ -71,7 +65,7 @@
 }
 
 .pop-up image{
-  width: 88%;
+  width: 80%;
 }
 
 .message{
@@ -99,11 +93,6 @@
   box-shadow: 4rpx 4rpx 4rpx #cccccc;
 }
 
-.button-download.active{
-  transform: scale(1.2);
-  box-shadow: 4rpx 4rpx 8rpx black;
-}
-
 .button-cancel{
   width: 40%;
   height: 75rpx;
@@ -113,9 +102,4 @@
   border-radius: 40rpx;
   line-height: 70rpx;
   box-shadow: 4rpx 4rpx 4rpx #cccccc;
-}
-
-.button-cancel.active{
-  transform: scale(1.05);
-  box-shadow: 4rpx 4rpx 8rpx black;
 }

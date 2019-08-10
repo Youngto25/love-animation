@@ -4,9 +4,7 @@ Page({
     imageHeight: null,
     index: 1,
     zhanshi: '',
-    show: false,
-    changeDownload: false,
-    changeCancel: false
+    show: false
   },
 
   onLoad: function (options) {
@@ -18,10 +16,11 @@ Page({
 
   x() {
     wx.request({
-      url: 'https://img.xjh.me/random_img.php?type=bg&ctype=acg',
+      url: 'https://bing.ioliu.cn/v1/rand?type=json&w=400&h=240',
       success: res => {
         let index = this.data.y.length
-        this.data.y[index] = res.data.match(/".*?"/g)[0].replace("\"", "").replace("\"", "")
+        let url = res.data.data.url.replace(/^(http)[s]*(\:\/\/)/, 'https://images.weserv.nl/?url=')
+        this.data.y[index] = url
         this.setData({ y: this.data.y })
       }
     })
@@ -35,11 +34,14 @@ Page({
         clearInterval(timer)
       }
       this.x()
-    }, 0)
+    }, 10)
   },
 
   onPageScroll: function (e) {
-    if (e.scrollTop > this.data.imageHeight * this.data.index - 100) {
+    if(this.data.index === 1){
+      this.data.index += 1
+      this.loadImage()
+    } else if (e.scrollTop > this.data.imageHeight * this.data.index * 1.8 - 200) {
       this.data.index += 1
       this.loadImage()
     }
@@ -58,16 +60,14 @@ Page({
 
   downloadImage() {
     this.setData({ 
-      show: false,
-      changeDownload: true
+      show: false
     })
     setTimeout(()=>{
       this.setData({
-        changeDownload: false
       },200)
     })
     wx.downloadFile({
-      url: `https:${this.data.zhanshi}`,     //仅为示例，并非真实的资源
+      url: `${this.data.zhanshi}`,     //仅为示例，并非真实的资源
       success: function (res) {
         if (res.statusCode === 200) {
           wx.saveImageToPhotosAlbum({
@@ -91,11 +91,7 @@ Page({
   downloadCancel() {
     this.setData({
       show: false,
-      changeCancel: true
     })
-    setTimeout(()=>{
-      this.setData({changeCancel: false})
-    },1000)
   },
 
   onShow: function () {

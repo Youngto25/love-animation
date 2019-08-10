@@ -9,30 +9,25 @@ page{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.introduce{
   color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-.introduce view:first-child{
+.a{
   width: 90%;
   font-size: 70rpx;
   font-weight: 600;
-  margin-bottom: 80rpx;
   text-align: center;
 }
 
-.introduce view:last-child{
+.b{
+  width: 90%;
   font-size: 40rpx;
   font-weight: 400;
   text-align: center;
+  padding-bottom: 60rpx;
 }
 
 image{
-  margin: 20rpx;
+  margin: 40rpx;
   border-radius: 10%;
 }

@@ -13,8 +13,8 @@
       <image src="{{zhanshi}}" mode="aspectFit"></image>
       <view class="message">Do you want download the one</view>
       <view class="button-wrapper">
-        <view class="button-download {{changeDownload?'active':''}}" bindtap="downloadImage">Download</view>
-        <view class="button-cancel {{changeCancel?'active':''}}" bindtap="downloadCancel">Cancel</view>
+        <view class="button-download" bindtap="downloadImage">Download</view>
+        <view class="button-cancel" bindtap="downloadCancel">Cancel</view>
       </view>
     </view>
   </view>

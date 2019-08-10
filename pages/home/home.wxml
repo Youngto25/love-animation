@@ -1,7 +1,5 @@
 <view class="content-wrapper">
-  <image src="../../images/th.jpg" mode="aspectFill"></image>
-  <view class="introduce">
-    <view>A applet for viewing pictures</view>
-    <view>If you like one picture, you can also download it</view>
-  </view>
+  <view class="a">A applet for viewing pictures</view>
+  <image src="../../images/image.jpg" mode="aspectFill"></image>
+  <view class="b">If you like a picture, you can also download it</view>
 </view>
