@@ -1,0 +1,10 @@
+/* components/demo1/demo1.wxss */
+.wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: green;
+  color: white;
+  height: 80rpx;
+  align-items: center;
+}

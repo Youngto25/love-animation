@@ -1,0 +1,23 @@
+page{
+  box-sizing: border-box;
+}
+
+.parent{
+  width: 400rpx;
+  height: 400rpx;
+  background: red;
+}
+
+.son{
+  width: 100rpx;
+  height: 100rpx;
+  background: yellow;
+}
+
+.image_wrapper{
+  width: 750rpx;
+}
+
+.image_wrapper image{
+  width: 100%;
+}

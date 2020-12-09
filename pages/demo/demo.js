@@ -1,27 +1,34 @@
-const { store } = require("../../utils/store")
-
-// pages/home/home.js
-var app = getApp()
-
+// pages/demo/demo.js
 Page({
-  // useStore: ['author','arr'],
+
   /**
    * 页面的初始数据
    */
   data: {
-    navigatorBarHeight: app.globalData.navigatorBarHeight
+
+  },
+
+  getUserInfo: function(e){
+    console.log('userInfo',e)
+  },
+
+  onMyEvent(e){
+    console.log('parent',e)
+  },
+
+  parentClick(){
+    console.log('parent click')
+  },
+
+  sonClick(){
+    console.log('son click')
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log('app',app.globalData)
-    setTimeout(()=>{
-      app.store.setState({
-        msg: 'change'
-      })
-    },1000)
+
   },
 
   /**

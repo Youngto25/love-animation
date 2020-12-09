@@ -1,6 +1,10 @@
 page{
   background: #46215F;
 }
+.navigator{
+  width: 100vw;
+  background: #000;
+}
 
 .content-wrapper{
   height: 100vh;

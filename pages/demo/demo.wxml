@@ -1,0 +1,22 @@
+<view class="parent" bindtap="parentClick">
+  <view class="son" catchtap="sonClick"></view>
+</view>
+<demo1 message="yangtao" bind:myevent="onMyEvent"></demo1>
+<van-button type="primary" bind:getuserinfo="getUserInfo">按钮</van-button>
+<view class="image_wrapper">
+  <image src="https://images.weserv.nl/?url=h1.ioliu.cn/bing/PuffinRock_ZH-CN8849180279_400x240.jpg?imageslim" mode="widthFix"></image>
+</view>
+
+<van-notice-bar
+  text="在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。"
+>
+  <van-icon name="//img.yzcdn.cn/public_files/2017/8/10/6af5b7168eed548100d9041f07b7c616.png" slot="right-icon" />
+</van-notice-bar>
+
+<van-goods-action>
+  <van-goods-action-icon icon="chat-o" text="客服" dot />
+  <van-goods-action-icon icon="cart-o" text="购物车" info="5" />
+  <van-goods-action-icon icon="shop-o" text="店铺" />
+  <van-goods-action-button text="加入购物车" type="warning" />
+  <van-goods-action-button text="立即购买" />
+</van-goods-action>

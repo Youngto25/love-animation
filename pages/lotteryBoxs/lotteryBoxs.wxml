@@ -1,0 +1,16 @@
+<view class="box">
+    <view class="boxsub {{luckynum==index?'luck':''}}" wx:for='{{box}}'
+        style="{{index>=0&&index<3?'top:0;left:'+index*140+'rpx;':(index>2&&index<6?'right:0;top:'+((index-3)*100)+'rpx;':(index>5&&index<9?'bottom:0;right:'+(index-6)*140+'rpx;':(index>8&&index<12?'left:0;bottom:'+(index-9)*100+'rpx;':'')))}}"
+        wx:key=''>
+        <text class='boxcontent'
+            style='{{item.name.length>6?"line-height:40rpx;margin-top:10rpx;":"line-height:100rpx;"}}'>{{index}}</text>
+
+    </view>
+    <view class="lucky" catchtap="luckyTap">
+        <text class="taplucky">点击抽奖</text>
+        <text class="howMany">您还有<text class="howMany_num">{{howManyNum}}</text>次抽奖机会</text>
+    </view>
+</view>
+<view class="explain">
+
+</view>

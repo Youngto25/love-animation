@@ -1,0 +1,6 @@
+/* components/nav/nav.wxss */
+.nav{
+  width: 100vw;
+  height: 2rpx;
+  background: green;
+}

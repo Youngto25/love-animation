@@ -7,6 +7,14 @@ Page({
     show: false
   },
 
+  showImage(e){
+    console.log('e',e.currentTarget.dataset.img)
+    wx.previewImage({
+      current: e.currentTarget.dataset.img, // 当前显示图片的http链接
+      urls: this.data.y // 需要预览的图片http链接列表
+    })
+  },
+
   onLoad: function (options) {
     this.loadImage()
     this.setData({

@@ -1,0 +1,9 @@
+/* custom-tab-bar/index.wxss */
+.bar-wrapper{
+  width: 100vw;
+  height: 120rpx;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

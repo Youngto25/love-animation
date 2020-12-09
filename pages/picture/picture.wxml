@@ -1,7 +1,7 @@
 <view class="mark">
   <view class="pic-wrapper">
-    <view class="item" wx:for="{{y}}" wx:key="{{index}}">
-      <image src="{{item}}" mode="scaleToFill"></image>
+    <view class="item" wx:for="{{y}}" wx:key="{{index}}" >
+      <image src="{{item}}" mode="scaleToFill" bindtap="showImage" data-img="{{item}}"></image>
       <view class="download" data-src="{{item}}" bindtap="download">
         download
       </view>

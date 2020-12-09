@@ -1,5 +1,8 @@
+<nav></nav>
+<view class="navigator" style="height: {{navigatorBarHeight}}px"></view>
 <view class="content-wrapper">
   <view class="a">A applet for viewing pictures</view>
   <image src="../../images/image.jpg" mode="aspectFill"></image>
-  <view class="b">If you like a picture, you can also download it</view>
+  <view class="b">{{$state.user.name}}:{{$state.msg}}</view>
 </view>
+<view class="mask"></view>

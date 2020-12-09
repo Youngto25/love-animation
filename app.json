@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/lotteryBoxs/lotteryBoxs",
+    "pages/demo/demo",
     "pages/picture/picture",
     "pages/home/home"
   ],
@@ -10,6 +12,7 @@
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
+    "custom": true,
     "color": "#ffffff",
     "selectedColor": "#FD3C00",
     "backgroundColor": "#46215F",
@@ -28,6 +31,9 @@
         "selectedIconPath": "images/home-active.png"
       }
     ]
+  },
+  "usingComponents": {
+    "nav": "./components/nav/nav"
   },
   "sitemapLocation": "sitemap.json"
 }
